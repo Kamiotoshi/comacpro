@@ -10,7 +10,7 @@
     }
 
     .shared-form-container {
-      max-width: 1380px;
+      width: 95%;
       background-color: #ffffff;
       border-radius: 20px;
       padding: 30px;
