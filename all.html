@@ -139,6 +139,10 @@
             </div>
         </div>
     </main>
+    <!-- Footer sẽ được load từ file footer.html -->
+    <div id="location-placeholder">
+        <div class="loading">Đang tải location...</div>
+    </div>
     
     <!-- Footer sẽ được load từ file footer.html -->
     <div id="footer-placeholder">
@@ -213,6 +217,11 @@
                 })
                 .catch(error => {
                     console.error('Failed to load header:', error);
+                });
+             // Load Location
+            loadHTML('location-placeholder', 'location.html')
+                .catch(error => {
+                    console.error('Failed to load location:', error);
                 });
 
             // Load footer
