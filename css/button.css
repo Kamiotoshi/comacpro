@@ -1,0 +1,58 @@
+.btn-product {
+    width: 179px;
+    height: 45px;
+    background: #FFA21A;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-product:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 162, 26, 0.3);
+    color: #000;
+  }
+  
+  .btn-product .icon,
+  .btn-user .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-product .icon img,
+  .btn-user .icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .btn-user {
+    width: 45px;
+    height: 45px;
+    background: #FFA21A;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-user:hover {
+    background-color: #e8931a;
+  }
+  
