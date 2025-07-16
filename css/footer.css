@@ -31,7 +31,7 @@
         }
         
         .logo-container p {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.4;
             margin: 0;
         }
@@ -62,7 +62,7 @@
             display: block;
             margin-bottom: 8px;
             transition: color 0.3s;
-            font-size: 14px;
+            font-size: 16px;
         }
         
         .footer-column a:hover {
@@ -83,7 +83,7 @@
         
         .footer-column .contact-info {
             margin-bottom: 10px;
-            font-size: 14px;
+            font-size: 16px;
         }
         
         .footer-column .contact-info strong {
@@ -154,7 +154,7 @@
             }
             
             .copyright-text {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         

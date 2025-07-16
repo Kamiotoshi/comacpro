@@ -115,41 +115,21 @@
         <div class="loading">Đang tải header...</div>
     </div>
 
-    <!-- Main content -->
-    <main class="main-content">
-        <div class="content-wrapper">
-            <h1>Chào mừng đến với COMACPRO</h1>
-
-            <div class="sample-content">
-                <h2>Nội dung trang chính</h2>
-                <p>Đây là nội dung chính của trang web. Bạn có thể thay thế phần này bằng nội dung thực tế của mình.</p>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>Dịch vụ 1</h4>
-                        <p>Mô tả dịch vụ 1 của công ty. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Dịch vụ 2</h4>
-                        <p>Mô tả dịch vụ 2 của công ty. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Dịch vụ 3</h4>
-                        <p>Mô tả dịch vụ 3 của công ty. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- location sẽ được load từ file footer.html -->
+    
+    <!-- Điền thông tin sẽ được load từ file info.html -->
+    <div id="info-placeholder">
+        <div class="loading">Đang tải Điền thông tin...</div>
+    </div>
+    <!-- location sẽ được load từ file location.html -->
     <div id="location-placeholder">
         <div class="loading">Đang tải location...</div>
     </div>
-    <!-- Giá bán thiết bị sẽ được load từ file footer.html -->
+    
+    <!-- Giá bán thiết bị sẽ được load từ file price.html -->
     <div id="price-placeholder">
         <div class="loading">Đang tải giá bán thiết bị...</div>
     </div>
-    <!-- Footer banner sẽ được load từ file footer.html -->
+    <!-- Footer banner sẽ được load từ file footer_banner.html -->
     <div id="fbanner-placeholder">
         <div class="loading">Đang tải footer banner...</div>
     </div>
@@ -227,6 +207,16 @@
                 })
                 .catch(error => {
                     console.error('Failed to load header:', error);
+                });
+            // Load info 
+            loadHTML('info-placeholder', 'info.html')
+                .then(() => {
+                    const script = document.createElement('script');
+                    script.src = 'js/info.js';
+                    document.body.appendChild(script);
+                })
+                .catch(error => {
+                    console.error('Failed to load info:', error);
                 });
             // Load Location
             loadHTML('location-placeholder', 'location.html')
