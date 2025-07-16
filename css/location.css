@@ -62,7 +62,7 @@
 
         .city-select {
             width: 652px;
-            height: 49px;
+            height: 45px;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 11px 16px;
@@ -78,7 +78,7 @@
 
         .postal-input {
             width: 652px;
-            height: 49px;
+            height: 45px;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 11px 16px;
@@ -88,7 +88,7 @@
 
         .address-input {
             width: 1111px;
-            height: 49px;
+            height: 45px;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 11px 16px;
@@ -123,7 +123,7 @@
         /* Responsive Design */
         @media (max-width: 1440px) {
             .warehouse-container {
-                max-width: 95%;
+                max-width: 100%;
                 height: auto;
                 min-height: 290px;
             }
@@ -177,7 +177,7 @@
 
         @media (max-width: 576px) {
             .warehouse-container {
-                padding: 10px;
+                padding: 20px;
             }
             
             .warehouse-title {
