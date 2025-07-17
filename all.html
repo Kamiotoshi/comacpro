@@ -114,8 +114,12 @@
     <div id="header-placeholder">
         <div class="loading">Đang tải header...</div>
     </div>
+    <!-- Header sẽ được load từ file header.html -->
+    <div id="hbanner-placeholder">
+        <div class="loading">Đang tải header banner...</div>
+    </div>
 
-    
+
     <!-- Điền thông tin sẽ được load từ file info.html -->
     <div id="info-placeholder">
         <div class="loading">Đang tải Điền thông tin...</div>
@@ -124,11 +128,16 @@
     <div id="location-placeholder">
         <div class="loading">Đang tải location...</div>
     </div>
-    
+
     <!-- Giá bán thiết bị sẽ được load từ file price.html -->
     <div id="price-placeholder">
         <div class="loading">Đang tải giá bán thiết bị...</div>
     </div>
+    <!-- Buttons section sẽ được load từ file buttons.html -->
+    <div id="buttons-placeholder">
+        <div class="loading">Đang tải buttons...</div>
+    </div>
+
     <!-- Footer banner sẽ được load từ file footer_banner.html -->
     <div id="fbanner-placeholder">
         <div class="loading">Đang tải footer banner...</div>
@@ -208,6 +217,16 @@
                 .catch(error => {
                     console.error('Failed to load header:', error);
                 });
+            // Load header banner
+            loadHTML('hbanner-placeholder', 'header_banner.html')
+                .then(() => {
+                    const script = document.createElement('script');
+                    script.src = 'js/header_banner.js';
+                    document.body.appendChild(script);
+                })
+                .catch(error => {
+                    console.error('Failed to load header banner:', error);
+                });
             // Load info 
             loadHTML('info-placeholder', 'info.html')
                 .then(() => {
@@ -238,6 +257,17 @@
                 .catch(error => {
                     console.error('Failed to load price:', error);
                 });
+            // Load buttons
+            loadHTML('buttons-placeholder', 'sendbutton.html')
+                .then(() => {
+                    const script = document.createElement('script');
+                    script.src = 'js/sendbutton.js';
+                    document.body.appendChild(script);
+                })
+                .catch(error => {
+                    console.error('Failed to load buttons:', error);
+                });
+
 
             // Load footer banner
             loadHTML('fbanner-placeholder', 'footer_banner.html')
