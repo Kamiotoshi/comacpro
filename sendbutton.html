@@ -94,25 +94,26 @@
 
 
         /* Responsive design */
-       @media (max-width: 576px) {
+      @media (max-width: 576px) {
     .buttons-wrapper {
-       
-        gap: 15px;
+        flex-direction: row;     /* ✅ Duy trì hàng ngang */
+        gap: 10px;
+        align-items: center;
     }
 
     .button-left,
     .button-right {
+        flex: 1 1 50%;           /* ✅ mỗi bên 50% chiều rộng */
         justify-content: center;
-        width: 100%;       /* ✅ Bắt button container full width */
     }
 
     .btn-exit,
     .btn-user {
-        width: 100%;       /* ✅ Bắt button full width */
-        height: auto;      /* ✅ Cho nút cao theo nội dung */
-        justify-content: center;
+        width: 100%;             /* ✅ full width của mỗi khối 50% */
+        height: auto;
     }
 }
+
 
 
         @media (min-width: 577px) and (max-width: 768px) {
