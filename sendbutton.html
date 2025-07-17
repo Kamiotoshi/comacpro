@@ -94,27 +94,26 @@
 
 
         /* Responsive design */
-        @media (max-width: 576px) {
-            .buttons-wrapper {
-                flex-direction: column;
-                gap: 15px;
-            }
+       @media (max-width: 576px) {
+    .buttons-wrapper {
+       
+        gap: 15px;
+    }
 
-            .button-left,
-            .button-right {
-                justify-content: center;
-            }
+    .button-left,
+    .button-right {
+        justify-content: center;
+        width: 100%;       /* ✅ Bắt button container full width */
+    }
 
-            .btn-exit {
-                width: 100%;
-                
-            }
+    .btn-exit,
+    .btn-user {
+        width: 100%;       /* ✅ Bắt button full width */
+        height: auto;      /* ✅ Cho nút cao theo nội dung */
+        justify-content: center;
+    }
+}
 
-            .btn-user {
-                width: 100%;
-                
-            }
-        }
 
         @media (min-width: 577px) and (max-width: 768px) {
             .btn-exit {
