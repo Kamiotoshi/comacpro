@@ -209,7 +209,7 @@
         // Load header và footer khi trang được tải
         document.addEventListener('DOMContentLoaded', function () {
             // Load header trước
-            loadHTML('header-placeholder', 'header.html')
+            loadHTML('header-placeholder', 'components/header.html')
                 .then(() => {
                     // Sau khi header load xong, khởi tạo lại JavaScript
                     initializeHeaderJS();
@@ -218,7 +218,7 @@
                     console.error('Failed to load header:', error);
                 });
             // Load header banner
-            loadHTML('hbanner-placeholder', 'header_banner.html')
+            loadHTML('hbanner-placeholder', 'components/header_banner.html')
                 .then(() => {
                     const script = document.createElement('script');
                     script.src = 'js/header_banner.js';
@@ -228,7 +228,7 @@
                     console.error('Failed to load header banner:', error);
                 });
             // Load info 
-            loadHTML('info-placeholder', 'info.html')
+            loadHTML('info-placeholder', 'components/info.html')
                 .then(() => {
                     const script = document.createElement('script');
                     script.src = 'js/info.js';
@@ -238,7 +238,7 @@
                     console.error('Failed to load info:', error);
                 });
             // Load Location
-            loadHTML('location-placeholder', 'location.html')
+            loadHTML('location-placeholder', 'components/location.html')
                 .then(() => {
                     const script = document.createElement('script');
                     script.src = 'js/location.js';
@@ -248,7 +248,7 @@
                     console.error('Failed to load location:', error);
                 });
             // Load price 
-            loadHTML('price-placeholder', 'price.html')
+            loadHTML('price-placeholder', 'components/price.html')
                 .then(() => {
                     const script = document.createElement('script');
                     script.src = 'js/price.js';
@@ -258,7 +258,7 @@
                     console.error('Failed to load price:', error);
                 });
             // Load buttons
-            loadHTML('buttons-placeholder', 'sendbutton.html')
+            loadHTML('buttons-placeholder', 'components/sendbutton.html')
                 .then(() => {
                     const script = document.createElement('script');
                     script.src = 'js/sendbutton.js';
@@ -270,14 +270,14 @@
 
 
             // Load footer banner
-            loadHTML('fbanner-placeholder', 'footer_banner.html')
+            loadHTML('fbanner-placeholder', 'components/footer_banner.html')
                 .catch(error => {
                     console.error('Failed to load footer banner:', error);
                 });
 
 
             // Load footer
-            loadHTML('footer-placeholder', 'footer.html')
+            loadHTML('footer-placeholder', 'components/footer.html')
                 .catch(error => {
                     console.error('Failed to load footer:', error);
                 });
